@@ -3,8 +3,6 @@ djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 django-cors-headers==4.2.0
 Django==4.1
-pysqlite3==0.5.1
-libsqlite3-dev
 postgres==4.0
 PyJWT==2.8.0
 sqlparse==0.4.3
