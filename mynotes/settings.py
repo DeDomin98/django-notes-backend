@@ -137,15 +137,15 @@ WSGI_APPLICATION = 'mynotes.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+import os
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.mysql',
     'NAME': "notes-app-db",
     'HOST': "aws.connect.psdb.cloud",
     'PORT': "3306",
-    'USER': "cszbuhg72dztc9c812si",
-    'PASSWORD': "pscale_pw_62Dmwt6KZq7DgVQhLPbFkV9umPwnf3vHrRxSlJ0tmrW",
+    'USER': "z2z94ipozx9z30myneg4",
+    'PASSWORD': os.environ.get('Planetscale_password'),
     'OPTIONS': {'ssl': {'ca': "/etc/pki/tls/certs/ca-bundle.crt"}}
   }
 }
