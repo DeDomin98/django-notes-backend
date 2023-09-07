@@ -137,19 +137,16 @@ WSGI_APPLICATION = 'mynotes.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-import os
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': "notes-app-db",
-    'HOST': "aws.connect.psdb.cloud",
-    'PORT': "3306",
-    'USER': "z2z94ipozx9z30myneg4",
-    'PASSWORD': os.environ.get('Planetscale_password'),
-    'OPTIONS': {'ssl': {'ca': "/etc/pki/tls/certs/ca-bundle.crt"}}
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'DeDomin98',
+    'PASSWORD': 'x5ksuYWm7HXz',
+    'HOST': 'ep-wild-tree-20346949.eu-central-1.aws.neon.tech',
+    'PORT': '5432',
   }
 }
-
  
 
 # Password validation
