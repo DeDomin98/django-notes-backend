@@ -139,14 +139,15 @@ WSGI_APPLICATION = 'mynotes.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',                      
-        'USER': 'postgres',
-        'PASSWORD': 'I3CdpoRarojut0qwAU0s',
-        'HOST': 'containers-us-west-117.railway.app',
-        'PORT': '6169',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': "notes-app-db",
+    'HOST': "aws.connect.psdb.cloud",
+    'PORT': "3306",
+    'USER': "cszbuhg72dztc9c812si",
+    'PASSWORD': "pscale_pw_62Dmwt6KZq7DgVQhLPbFkV9umPwnf3vHrRxSlJ0tmrW",
+    'OPTIONS': {'ssl': {'ca': "/etc/pki/tls/certs/ca-bundle.crt"}}
+  }
 }
 
  
